@@ -5,20 +5,24 @@ import ButtonItem from '../ButtonItem'
 
 const CarItem = (props) => {
 
+    const {name, tagline, image} = props
 
     return (
         <View style={styles.carContainer}>
-            <ImageBackground source={require('../../assets/images/ModelX.jpeg')} style={styles.imageStyle} />
+            <ImageBackground source={image} style={styles.imageStyle} />
             <View style={styles.heading}>
-                <Text style={styles.carTitle}>Model S</Text>
-                <Text style={styles.carInformation}>Starting at $69 000</Text>
+                <Text style={styles.carTitle}>{name}</Text>
+                <Text style={styles.carInformation}>{tagline}</Text>
             </View>
-            <ButtonItem type="primary" content="Custom Order" onPress={() => {
-                console.warn('Custom Order')
-            }}/>
-            <ButtonItem type="secondary" content="Existing inventory" onPress={() => {
-                console.warn('Existing inventory')
-            }}/>
+            <View style={styles.buttonWrapper}>
+                <ButtonItem type="primary" content="Custom Order" onPress={() => {
+                    console.warn('Custom Order')
+                }}/>
+                <ButtonItem type="secondary" content="Existing inventory" onPress={() => {
+                    console.warn('Existing inventory')
+                }}/>
+            </View>
+            
         </View>
     );
 }

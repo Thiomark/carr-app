@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover',
         position: 'absolute'
+    },
+    buttonWrapper: {
+        width: '100%',
+        position: 'absolute',
+        bottom: '2em'
     }
 });
 

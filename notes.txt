@@ -1,0 +1,1 @@
+<View> is similar to a <div>

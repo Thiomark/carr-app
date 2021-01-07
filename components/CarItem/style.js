@@ -1,20 +1,20 @@
-import { StyleSheet} from 'react-native';
+import { StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
+    
     carContainer: {
+        height: Dimensions.get('screen').height,
         width: '100%',
-        height: '100%',
         alignItems: 'center'
     },
+    taglineCTA: {
+        textDecorationLine: 'underline',
+    },
     heading: {
-        paddingTop: '2em',
-        textAlign: 'center'
+        paddingTop: 70,
+        textAlign: 'center',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     carTitle: {
         fontSize: 35,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     buttonWrapper: {
         width: '100%',
         position: 'absolute',
-        bottom: '2em'
+        bottom: 30
     }
 });
 

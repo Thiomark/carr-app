@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, Pressable } from 'react-native';
 
-const ButtonItem = (props) => {
+const Header = (props) => {
 
     const { type, content, onPress } = props;
 
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default ButtonItem
+export default Header

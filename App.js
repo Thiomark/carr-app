@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import CarItem from './components/CarItem'
+import CarList from './components/CarList'
+
 
 
 export default function App() {
-    const image = require(`./assets/images/ModelX.jpeg`)
+
     return (
         <View style={styles.container}>
-            <CarItem name="Model X" tagline="Starting from $99,500" image={image}/>
+           <CarList/>
         </View>
     );
 }
